@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Custom Greeting</title>
+  <style type="text/css">
+    body{
+      font-family: monospace;
+      margin: 3cm; 
+      font-size: 20pt;
+    }
+  </style>
+</head>
+<body>
+  <h1>What Happened to the Mona Lisa</h1>
+    <p>After hiding the painting in his {{.FormValue "word1"}} for two years.</p>
+    <p>He grew {{.FormValue "word2"}} and tried to sell it</p>
+    <p>to a/an {{.FormValue "word3"}} in Florance, but was caught!</p>   
+    <form method="get" action="/">
+      <button type="submit">Home</button>
+    </form>
+</body>
+</html>
