@@ -6,7 +6,7 @@ import (
 )
 
 type Logger interface {
-	Logger(...interface{})
+	Log(...interface{})
 }
 
 type logger struct {
@@ -18,6 +18,6 @@ func (lg *logger) Log(args ...interface{}) {
 	fmt.Fprintln(lg.out)
 }
 
-func New(w io.Writer) *logger {
+func New(w io.Writer) Logger {
 	return &logger{out: w}
 }
